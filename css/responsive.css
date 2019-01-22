@@ -1,0 +1,311 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width : 766px) {
+
+.navbar {
+	padding: 10px 15px;
+	margin-bottom: 0;
+}
+.navbar-brand img {
+	width: 90px;
+}
+
+/*less section padding for small devices*/
+.section-padding {
+   padding: 50px 0;
+}
+
+
+/*service section*/
+.our-services {
+	padding-bottom: 0;
+}
+.service-content {
+	border: 0;
+}
+.service-content .media-left, 
+.service-content .media>.pull-left {
+	display: block;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.service-content .media-left, 
+.service-content .media-right, 
+.service-content .media-body {
+	text-align: center;
+}
+.service-content:nth-child(1) .media-body, 
+.service-content:nth-child(3) .media-body {
+	padding-right: 0;
+	text-align: center;
+}
+
+.service-content:nth-child(2) .media-left, 
+.service-content:nth-child(4) .media-left {
+	padding-left: 0;
+	text-align: center;
+}
+.service-content:nth-child(3), 
+.service-content:nth-child(4) {
+	padding-top: 0;
+}
+
+/*portfolio*/
+.portfolio-item {
+	min-height: 200px;
+}
+
+/*portfolio modal style*/
+#portfolioModal1 img{
+	margin-bottom: 30px;
+}
+
+
+
+/*working-process*/
+.circle-connector:before {
+	display: none;
+}
+.circle-connector .col-sm-3 {
+	margin-bottom: 30px;
+}
+
+
+/*team section*/
+.team-wrapper .col-sm-4 {
+	margin-bottom: 30px;
+}
+
+/*counter section*/
+.counter-section .col-sm-3 {
+	margin-bottom: 20px;
+}
+/*partner-section*/
+.partner {
+	border: 0;
+}
+.partner-section img {
+	width: 100%;
+}
+
+
+/*Twitter feed section*/
+.user span {
+	bottom: 30px;
+	left: 37%;
+}
+p.timePosted {
+	padding: 0;
+}
+p.timePosted::before {
+	display: none;
+}
+
+/*footer widget*/
+.footer-widget.footer-logo {
+	padding: 0;
+}
+.footer-widget.footer-logo::after {
+	display: none;
+}
+.footer-widget {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+/*google map modal*/
+.modal-dialog {
+	width: 90%;
+}
+
+
+
+
+/*blog page*/
+.social-share li {
+	padding-right: 2px;
+}
+.blog-page .blog-post-wrapper .entry-footer {
+	padding: 30px 10px;
+}
+/*flicker photo feed*/
+.widget_flicker_photo ul li:nth-child(4) {
+	margin-right: 0px
+}
+
+/*pagination*/
+.pagination>li:first-child>a, 
+.pagination>li:first-child>span {
+	margin-right: 20px;
+}
+.pagination>li:last-child>a, 
+.pagination>li:last-child>span {
+	margin-left: 20px;
+}
+
+
+/*Blog Single Page*/
+.comments-wrapper .media-left, 
+.comments-wrapper .media-right, 
+.comments-wrapper .media-body {
+	display: block;
+}
+
+
+
+}
+
+/* Landscape Mobile */
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+
+
+/*portfolio*/
+#filter li {
+	padding: 0px 12px;
+}
+.portfolio-item {
+	min-height: 300px;
+}
+/*Twitter feed section*/
+.user span {
+	left: 45%;
+}
+
+/*flicker photo feed*/
+.widget_flicker_photo ul li:nth-child(4) {
+	margin-right: 15px
+}
+
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width : 768px) and (max-width : 991px) {
+
+/*service section*/
+.service-content {
+	padding-bottom: 40px;
+}
+.service-content:nth-child(2) .media-left, 
+.service-content:nth-child(4) .media-left {
+	padding-left: 30px;
+}
+.service-content:nth-child(3), 
+.service-content:nth-child(4) {
+	padding-top: 50px;
+	padding-bottom: 0;
+}
+.service-content .media-left, 
+.service-content .media>.pull-left {
+	padding-right: 40px;
+}
+
+
+
+/*portfolio modal style*/
+#portfolioModal1 img{
+	margin-bottom: 30px;
+}
+
+
+/*Twitter feed section*/
+.user span {
+	left: 18%;
+}
+p.timePosted {
+	padding: 0;
+}
+p.timePosted::before {
+	left: -12px;
+}
+
+
+/*footer widget*/
+.footer-widget.footer-logo {
+	padding: 40px 0 40px 30px;
+}
+.footer-widget.footer-logo::after {
+	display: none;
+}
+
+
+/*flicker photo feed*/
+.widget_flicker_photo ul li:nth-child(4) {
+	margin-right: 15px
+}
+
+
+/*Blog Single Page*/
+.comments-wrapper .media-left, 
+.comments-wrapper .media-right, 
+.comments-wrapper .media-body {
+	display: block;
+}
+
+
+
+
+}
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) and (max-width : 1199px) {
+
+
+
+
+/*service section*/
+.service-content:nth-child(3), 
+.service-content:nth-child(4) {
+	padding-bottom: 0;
+}
+
+
+/*portfolio*/
+.portfolio-item {
+	min-height: 220px;
+}
+
+
+/*Twitter feed section*/
+.user span {
+	left: 28%;
+}
+
+
+/*footer widget*/
+.footer-widget.footer-logo {
+	padding: 40px 0 40px 30px;
+}
+
+/*blog page*/
+.blog-page .blog-post-wrapper {
+	margin-right: 0;
+}
+
+/*flicker photo feed*/
+.widget_flicker_photo ul li:nth-child(4) {
+	margin-right: 15px
+}
+
+
+/*Blog Single Page*/
+.comments-wrapper .media-left, 
+.comments-wrapper .media-right, 
+.comments-wrapper .media-body {
+	display: block;
+}
+
+
+
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width : 1200px) and (max-width : 1280px) {
+
+
+}
+
