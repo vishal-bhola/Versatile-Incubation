@@ -7,18 +7,16 @@ Versatile Incubation is an online platform where Innovators can apply for fundin
 * HTML
 * JavaScript
 * Cascading Style Sheets
-
-
-
-
+* php
+* Bootstrap
+* jquery
 
 ## Usage
 
-Just Open index.html 
+Head over to index.html to see the MAGIC!
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Credits
 
-Please make sure to update tests as appropriate.
-
-## License
+* Vishal (1711981343) Batch-2017
+* Akshat Gupta (1711981024) Batch-2017
+* Himanshu Verkiya (1711981120) Batch-2017
