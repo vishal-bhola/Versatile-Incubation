@@ -10,6 +10,7 @@ Versatile Incubation is an online platform where Innovators can apply for fundin
 * jquery
 * Bootstrap
 * Google APIs
+* Ajax
 
 ## Usage
 
