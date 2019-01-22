@@ -20,3 +20,9 @@ Head over to index.html to see the MAGIC!
 * Vishal (1711981343) Batch-2017
 * Akshat Gupta (1711981024) Batch-2017
 * Himanshu Verkiya (1711981120) Batch-2017
+
+## References
+
+* codepen.io (For integrating Open-Source DB)
+* uiCookies.io (For Refactoring the UI/UX)
+
