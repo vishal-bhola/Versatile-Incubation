@@ -1,160 +1,743 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>TriFlash</title>
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
 
-	<link rel="stylesheet" type="text/css" href="main_ref/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="main_ref/examples.css" />
-	<style>
+	    <title>Versatile Incubation</title>
+	    <!-- Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300' rel='stylesheet' type='text/css'>
+	    <!-- Flaticon CSS -->
+	    <link href="fonts/flaticon/flaticon.css" rel="stylesheet">
+	    <!-- font-awesome CSS -->
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
+	    <!-- Offcanvas CSS -->
+	    <link href="css/hippo-off-canvas.css" rel="stylesheet">
+	    <!-- animate CSS -->
+	    <link href="css/animate.css" rel="stylesheet">
+	    <!-- owl.carousel CSS -->
+	    <link href="css/owl.theme.css" rel="stylesheet">
+	    <link href="css/owl.carousel.css" rel="stylesheet">
+	    <!-- Bootstrap Core CSS -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Custom CSS -->
+	    <link href="css/style.css" rel="stylesheet">
+	    <!-- Responsive CSS -->
+	    <link href="css/responsive.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="css/style(1).css">
 
-	/* Style for our header texts
-	* --------------------------------------- */
-	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #fff;
-		margin:0;
-		padding:0;
-	}
-	.intro p{
-		color: #fff;
-	}
-
-	/* Centered texts in each section
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-	}
-
-	/* Fixed header and footer.
-	* --------------------------------------- */
-	#header, #footer{
-		position:fixed;
-		height: 50px;
-		display:block;
-		width: 100%;
-		background: #333;
-		z-index:9;
-		text-align:center;
-		color: #f2f2f2;
-		padding: 20px 0 0 0;
-	}
-
-	#header{
-		top:0px;
-	}
-	#footer{
-		bottom:0px;
-	}
+	    <script src="js/vendor/modernizr-2.8.1.min.js"></script>
+	    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+		    <script src="js/vendor/html5shim.js"></script>
+		    <script src="js/vendor/respond.min.js"></script>
+	    <![endif]-->
+	</head>
 
 
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu {
-		bottom: 80px;
-	}
-	#infoMenu li a {
-		color: #fff;
-		z-index: 999;
-	}
+<body id="page-top" data-spy="scroll"  data-target=".navbar">
 
-	</style>
+  <div id="st-container" class="st-container">
+    <div class="st-pusher">
+        <div class="st-content">
+            <div class="st-content-inner">
 
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+			  	<header class="header">
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="container">
+							<div class="navbar-header">
+		                        <button type="button" class="navbar-toggle collapsed" >
+		                          <span class="sr-only">Toggle navigation</span>
+		                          <i class="fa fa-bars"></i>
+		                        </button>
+							    <!-- offcanvas-trigger-effects -->
+								<h1 class="logo"><a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a></h1>
+							</div>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse navbar-collapse">
+								<ul class="nav navbar-nav navbar-right">
+									<li><a class="page-scroll" href="#home">Home</a></li>
+									<li><a class="page-scroll" href="#services">Login/Signup</a></li>
+									<li><a class="page-scroll" href="web/Project/index1.html">Source Code</a></li>
+									
+									
+									
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container -->
+					</nav>
+				</header>
 
-	<script type="text/javascript" src="main_ref/scrolloverflow.js"></script>
-	<script type="text/javascript" src="main_ref/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="main_ref/examples.js"></script>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['intro', 'opensource', 'googlesummerofcode2018', 'vicaraKai', 'frameserver', 'springer', 'hlang', 'GovIndia', 'youtube', 'develup', 'blog', 'connect'],
-				sectionsColor: ['#1e1f26', '#1BBC9B', '#fefefe', '#f4ec6a', '#fa6e59', '#f7efe2', '#f8aa055', '#efefef', '#e73f0b', '#2b232f', '#2988bc', '#f8f5f9'],
-				css3: true
-			});
-		});
-	</script>
 
-</head>
-<body>
+                <!-- slider content -->
+                <div id="x-corp-carousel" class="carousel slide hero-slide" data-ride="carousel">
+				    <!-- Indicators -->
+				    <ol class="carousel-indicators">
+				        <li data-target="#x-corp-carousel" data-slide-to="0" class="active"></li>
+				        <li data-target="#x-corp-carousel" data-slide-to="1"></li>
+				    </ol>
 
-<div id="footer">© 2019, TriFlash 
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				        <div class="item active">
+				            <img src="img/slider/slide-1.jpg" alt="Hero Slide">
+				            <!--Slide Image-->
 
-</div>
+				            <div class="container">
+				                <div class="carousel-caption">
+				                    <h1 class="animated lightSpeedIn">Innovative Business Ideas</h1>
 
-<div id="fullpage">
-	<div class="section " id="section0">
-		<div class="intro">
-			<img src="img/main.png" style="max-height:300px; margin-bottom:-90px; margin-top:-200px; padding-left:200px">
-			<h1>Hello, We are <span
-     class="txt-rotate"
-     data-period="2000"
-     data-rotate='[ "TriFlash ", "at chitkara ", " technology enthusiasts ", " developers ", "at hackathon " ]'></span></h1>
-			<p>This is homeplace for Our Work<span class="blinker">|</span></p><br>
-            
-						<a  href="index.html" ><button class="btn">Hackathon Project | Versatile Incubation </button></a>
+				                    <p class="lead animated lightSpeedIn">Smart brains lead to ideas <br> ideas lead to Innovation  <br>SHAPE YOUR FUTURE WITH US</p>
+
+				                    <a class="btn btn-default animated lightSpeedIn" href="#">Get Started</a>
+				                </div>
+				                <!--.carousel-caption-->
+				            </div>
+				            <!--.container-->
+				        </div>
+				        <!--.item-->
+
+				        <div class="item">
+				            <img src="img/slider/slide-2.jpg" alt="Hero Slide">
+				            <!--Slide Image-->
+
+				            <div class="container">
+				                <div class="carousel-caption">
+
+				                    <h1 class="animated bounceIn">Incorporating Corporates</h1>
+
+				                    <p class="lead animated bounceIn">We help startups to build themselves by connecting them to active Investors.</p>
+				                    <a class="btn btn-default animated bounceIn" href="#">Connect Now</a>
+				                </div>
+				                <!--.carousel-caption-->
+				            </div>
+				            <!--.container-->
+				        </div>
+				        <!--.item-->
+				    </div>
+				    <!--.carousel-inner-->
+
+				    <!-- Controls -->
+				    <a class="left carousel-control" href="#x-corp-carousel" role="button" data-slide="prev">
+				        <i class="fa fa-angle-left" aria-hidden="true"></i>
+				        <span class="sr-only">Previous</span>
+				    </a>
+				    <a class="right carousel-control" href="#x-corp-carousel" role="button" data-slide="next">
+				        <i class="fa fa-angle-right" aria-hidden="true"></i>
+				        <span class="sr-only">Next</span>
+				    </a>
+				</div>
+                 <!-- /end slider section -->
+
+		        <!-- services start -->
+				<section id="services" class="our-services section-padding">
+		            <div class="container">
+		              <div class="row text-center">
+		                <div class="col-xs-12">
+		                  <h2 class="section-title wow zoomIn">Our Agenda</h2>
+		                </div>
+		              </div> <!-- /.row -->
+
+		              <div class="row content-row">
+		                <div class="col-xs-12 col-sm-6 service-content">
+		                  <div class="media">
+
+		                    <a class="media-left" href="#">
+		                      <i class="flaticon-bulb11"></i>
+		                    </a>
+
+		                    <div class="media-body">
+		                      <h3 class="media-heading"> Active Funding</h3>
+		                      <p>By Helping Startups to connect with Govt. Agencies , we provide them with active funding from various Angel investors and Venture Capitalists.</p>
+
+		                      
+		                    </div> <!-- /.media-body -->
+		                  </div> <!-- /.media -->
+		                </div> <!-- /.col-sm-6 -->
+
+
+		                <div class="col-xs-12 col-sm-6 service-content">
+		                  <div class="media">
+
+		                    <a class="media-left" href="#">
+		                      <i class="flaticon-window22"></i>
+		                    </a>
+
+		                    <div class="media-body">
+		                      <h3 class="media-heading">Platform for Innovators</h3>
+		                      <p>Providing the best platform for proposing various ideas to industry giants , we help innovators to get in contact with genuine funders and organizations.
+
+
+		                      </p>
+
+		                    
+		                    </div> <!-- /.media-body -->
+		                  </div> <!-- /.media -->
+		                </div> <!-- /.col-sm-6 -->
+
+		                <div class="col-xs-12 col-sm-6 service-content">
+		                  <div class="media">
+
+		                    <a class="media-left" href="#">
+		                      <i class="flaticon-speaker30"></i>
+		                    </a>
+
+		                    <div class="media-body">
+		                      <h3 class="media-heading">Active Challenges</h3>
+		                      <p>A whole new platform , where companies and investors post their challenges
+		                      Come and grab this opportunity to dig into this and get your enlisted for their upcoming developments. </p>
+
+		                     
+		                    </div> <!-- /.media-body -->
+		                  </div> <!-- /.media -->
+		                </div> <!-- /.col-sm-6 -->
+
+
+		                <div class="col-xs-12 col-sm-6 service-content">
+		                  <div class="media">
+
+		                    <a class="media-left" href="#">
+		                      <i class="flaticon-bars6"></i>
+		                    </a>
+
+		                    <div class="media-body">
+		                      <h3 class="media-heading">Honest &amp; Genuine</h3>
+		                      <p>Wr provide secure transactions for funding , letting companies to get stay safe from online fraud and spoofing</p>
+
+		                      
+		                    </div> <!-- /.media-body -->
+		                  </div> <!-- /.media -->
+		                </div> <!-- /.col-sm-6 -->
+		              </div> <!-- /.row -->
+
+		            </div><!-- /.container -->
+		          </section>
+		        <!-- services end -->
+
+
+		        <!-- process start -->
+		        <section class="working-process section-padding">
+			        <div class="container">
+		              	<div class="row text-center">
+		                	<div class="col-xs-12">
+		                  		<h2 class="section-title wow zoomIn">Our Working Process</h2>
+		                	</div>
+		              	</div> <!-- /.row -->
+
+					    <div class="row text-center circle-connector">
+					      	<div class="col-xs-6 col-sm-3">
+					       		<div class="process-circle wow zoomIn">
+					          		<a href="#"><img src="img/met.png" alt=""></a>
+					          		<span>Research</span>
+					        	</div><!-- /.circle -->
+					      	</div><!-- /.col-sm-3 -->
+					      	<div class="col-xs-6 col-sm-3">
+					       		<div class="process-circle wow zoomIn">
+					          		<a href="#"><img src="img/met2.png" alt=""></a>
+					          		<span>Find & Connect</span>
+					        	</div><!-- /.circle -->
+					      	</div><!-- /.col-sm-3 -->
+					      	<div class="col-xs-6 col-sm-3">
+					       		<div class="process-circle wow zoomIn">
+					          		<a href="#"><img src="img/met3.png" alt=""></a>
+					          		<span>Cultivate Ideas</span>
+					        	</div><!-- /.circle -->
+					      	</div><!-- /.col-sm-3 -->
+					      	<div class="col-xs-6 col-sm-3">
+					       		<div class="process-circle wow zoomIn">
+					          		<a href="#"><img src="img/met4.png" alt=""></a>
+					          		<span>Work</span>
+					        	</div><!-- /.circle -->
+					      	</div><!-- /.col-sm-3 -->
+						</div><!-- /.row -->
+
+			        </div>
+		        </section>
+		        <!-- process end -->
+
+
+		        <!-- work start -->
+		        <section id="work" class="work-section section-padding">
+			        <div class="container">
+		              	<div class="row text-center">
+		                	<div class="col-xs-12">
+		                  		<h2 class="section-title wow zoomIn">A Section of Our Work</h2>
+		                	</div>
+		              	</div> <!-- /.row -->
+
+		              	
+
+				        <div class="row">
+				            
+				                
+
+				                
+
+				                <div class="portfolio-item col-xs-12 col-sm-6 col-md-4" data-groups='["all", "design", "branding"]'>
+				                	<div class="single-portfolio">
+								        <figure class="css-hover-effect">
+								            <img src="img/work/p.jpg" alt="">
+								            <figcaption class="figure-caption">
+								              
+								              <div class="figure-info">
+								                <span> Rubrik</span>
+								                <h2><a href="company/index.html">Cloud Hosting Startup</a></h2>
+								              </div>
+								            </figcaption>   
+								        </figure>
+				                    </div><!-- /.single-portfolio -->
+				                </div>
+
+				               <div class="portfolio-item col-xs-12 col-sm-6 col-md-4" data-groups='["all", "design", "branding"]'>
+				                	<div class="single-portfolio">
+								        <figure class="css-hover-effect">
+								            <img src="img/work/s.jpg" alt="">
+								            <figcaption class="figure-caption">
+								              
+								              <div class="figure-info">
+								                <span> Lucidious</span>
+								                <h2><a href="company1/index.html">Security Startup</a></h2>
+								              </div>
+								            </figcaption>   
+								        </figure>
+				                    </div><!-- /.single-portfolio -->
+				                </div>
+
+				                <div class="portfolio-item col-xs-12 col-sm-6 col-md-4" data-groups='["all", "design", "branding"]'>
+				                	<div class="single-portfolio">
+								        <figure class="css-hover-effect">
+								            <img src="img/work/ai.jpg" alt="">
+								            <figcaption class="figure-caption">
+								              
+								              <div class="figure-info">
+								                <span>Front</span>
+								                <h2><a href="company2/index.html">AI Startup</a></h2>
+								              </div>
+								            </figcaption>   
+								        </figure>
+				                    </div><!-- /.single-portfolio -->
+				                </div>
+				            </div>
+				        </div><!-- /.row -->
+
+						<!-- portfolio details in modal, add individual modal for individual item -->
+						<!-- Modal -->
+						<div class="modal fade portfolioModal" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-dialog modal-lg">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="flaticon-wrong6"></i></span></button>
+						      </div>
+						      <div class="modal-body">
+						        <div class="row">
+						        	<div class="col-md-6 col-xs-12">
+						        		<img class="img-responsive" src="img/work/portfolio-1.jpg" alt="">
+						        	</div>
+						        	<div class="col-md-6">
+						        		<div class="portfolio-details">
+						        			<h3>Portfolio Title</h3>
+						        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, omnis illo iste ratione. Numquam eveniet quo, ullam itaque expedita impedit. Eveniet, asperiores.</p>
+						        			<strong>Client: <a href="#">Themehippo</a></strong> <br>
+						        			<strong>Service: Web Development</strong> <br>
+						        			<strong>Client Testimonial:</strong> <br>
+											<blockquote>
+											  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+											</blockquote>
+						        		</div>
+						        	</div>
+						        </div>
+						      </div><!-- /.modal-body -->
+						    </div><!-- /.modal-content -->
+						  </div><!-- /.modal-dialog -->
+						</div><!-- /.portfolioModal -->
+
+
+				        
+			        </div>
+		        </section>		        
+		        <!-- work end -->
+
+
+<!-- team start -->
+		        <section id="about" class="team-section section-padding">
+			        <div class="container">
+		              	<div class="row text-center">
+		                	<div class="col-xs-12">
+		                  		<h2 class="section-title wow zoomIn">Startups &amp; Innovators</h2>
+		                  		<div class="team-intro wow zoomIn">
+		                  			<p>India is quickly becoming a leading global startup hub.Many startups have to deal with Government entities while working on their business ideas.<br>
+		                  			Here we provide them a platform to reduce effort and let them connect with various corporate to cultivate their brilliant ideas.</p>
+		                  		</div>
+		                	</div>
+		              	</div> <!-- /.row -->
+
+		              	<div class="star-devider">
+				          <img src="img/black-star.png" alt="">
+				        </div>
+
+		              	<div class="row text-center">
+		                	<div class="col-xs-12">
+		                  		<h2 class="section-title wow zoomIn"></h2>
+		                	</div>
+		              	</div> <!-- /.row -->
+
+		              	<div class="team-wrapper text-center">
+			              	<div class="row">
+				              	<div class="col-sm-4">
+							        <figure class="css-hover-effect">
+							            <a href="https://www.mindsumo.com/challenges"><img src="img/team/team-1.jpg" alt=""></a>
+							            <figcaption class="figure-caption">
+							             
+							              <div class="figure-info">
+							                <h2>Startups Corner </h2>
+							              </div>
+							            </figcaption>   
+							        </figure>
+				              	</div><!-- /.col-sm-4 -->
+
+				              	<div class="col-sm-4">
+							        
+							            <img src="img/team/team-1.jpg" alt="">
+							             
+							       
+				              	</div><!-- /.col-sm-4 -->
+
+				              	<div class="col-sm-4">
+							        <figure class="css-hover-effect"><a href="https://www.mindsumo.com/challenges">
+							            <img src="img/team/team-3.jpg" alt=""></a>
+							            <figcaption class="figure-caption">
+							             
+							              <div class="figure-info">
+							                <h2>Innovators Corner </h2>
+							              </div>
+							            </figcaption>   
+							        </figure>
+				              	</div><!-- /.col-sm-4 -->
+			              	</div><!-- /.row -->
+		              	</div><!-- /.team-wrapper -->
+		            </div> <!-- /.container -->
+		        </section>
+		        <!-- team end -->
+
+		        <!-- counter start -->
+		        <section id="countUp" class="counter-section" data-stellar-background-ratio="0.5">
+		        	<div class="css-overlay section-padding">
+			        	<div class="container">
+							<div class="row text-center">
+						        <div class="col-xs-12 col-sm-3">
+						          <strong><span class="timer">500</span>+</strong>
+						          <span class="count-description">Happy client served</span>
+						        </div> <!-- /.col-sm-3 -->
+						        <div class="col-xs-12 col-sm-3">
+						          <strong><span class="timer">2000</span>+</strong>
+						          <span class="count-description">Innovators</span>
+						        </div><!-- /.col-sm-3 -->
+						        <div class="col-xs-12 col-sm-3">
+						          <strong><span class="timer">250</span>+</strong>
+						          <span class="count-description">Government Agencies</span>
+						        </div><!-- /.col-sm-3 -->
+						        <div class="col-xs-12 col-sm-3">
+						          <strong><span class="timer">500</span>+</strong>
+						          <span class="count-description">Corporates</span>
+						        </div><!-- /.col-sm-3 -->
+					      	</div>
+			        	</div><!-- /.container -->
+		        	</div><!-- /.css-overlay -->
+		        </section><!-- /.counter-section -->
+		        <!-- counter end -->
+
+
+		        <!-- testimonial start -->
+		        <section class="testimonial-section section-padding">
+			        <div class="container">
+		              	<div class="row text-center">
+		                	<div class="col-xs-12">
+		                  		<h2 class="section-title wow zoomIn">Testimonials</h2>
+		                	</div>
+		              	</div> <!-- /.row -->
+
+		              	<div class="row content-row">
+		                	<div class="col-xs-12">
+								<div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+								   
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner" role="listbox">
+								    <div class="item active">
+								      <img src="img/avatar-2.jpg" alt="">
+								      <div class="carousel-caption">
+								        <p>Being a cloud hosting startup we needed better fortunes to flourish. That's where we considered Versatile Incubation's services and we don't regret it at all</p>
+
+								        <span class="source-title">Chanel Iman, Rubrik</span>
+								      </div>
+								    </div>
+								    
+								    
+
+								  </div>
+
+								</div>
+		                	</div>
+		              	</div> <!-- /.row -->
+		            </div> <!-- /.container -->
+		        </section>
+		        <!-- testimonial end -->
+
+		        <!-- partner start -->
+		        <section class="partner-section section-padding">
+			        <div class="container">
+		              	<div class="row text-center">
+		                	<div class="col-xs-12">
+		                  		<h2 class="section-title wow zoomIn">We Are Trusted By</h2>
+		                	</div>
+		              	</div> <!-- /.row -->
+
+						<div class="row content-row">
+					      <div class="col-xs-6 col-sm-3 partner wow zoomIn">
+					        <a href="#"><img src="img/partner/partner-1.png" alt=""></a>
+					      </div>
+					      <div class="col-xs-6 col-sm-3 partner wow zoomIn">
+					        <a href="#"><img src="img/partner/partner-2.png" alt=""></a>
+					      </div>
+					      <div class="col-xs-6 col-sm-3 partner wow zoomIn">
+					        <a href="#"><img src="img/partner/partner-3.png" alt=""></a>
+					      </div>
+					      <div class="col-xs-6 col-sm-3 partner wow zoomIn">
+					        <a href="#"><img src="img/partner/partner-4.png" alt=""></a>
+					      </div>
+					      <div class="col-xs-6 col-sm-3 partner wow zoomIn">
+					        <a href="#"><img src="img/partner/partner-4.png" alt=""></a>
+					      </div>
+					      <div class="col-xs-6 col-sm-3 partner wow zoomIn">
+					        <a href="#"><img src="img/partner/partner-3.png" alt=""></a>
+					      </div>
+					      <div class="col-xs-6 col-sm-3 partner wow zoomIn">
+					        <a href="#"><img src="img/partner/partner-2.png" alt=""></a>
+					      </div>
+					      <div class="col-xs-6 col-sm-3 partner wow zoomIn">
+					        <a href="#"><img src="img/partner/partner-1.png" alt=""></a>
+					      </div>
+					  	</div>
+		        	</div> <!-- /.container -->
+		        </section>
+		        <!-- partner end -->
+
+
+		        
+
+				<!-- Twitter start -->
+				<section id="twitter" class="twitter-feed-section section-padding">
+				    <div class="container">
+
+				      <div class="row">
+				        <div class="col-sm-8 col-sm-offset-2 text-center">
+				          <div class="twitter owl-carousel"></div>
+				        </div>
+				      </div><!-- .row -->
+
+				    </div><!-- .container -->
+				</section>
+				<!-- Twitter end -->
+
+				<!-- call-to-action start 
+		        <section class="call-to-action section-padding">
+			        <div class="container">
+				        <h2 class="wow zoomIn">Duis mollis est non commodo luctus nisi erat porttitor.</h2>
+				        <span class="sub-title wow zoomIn">You can decide which html tags you want</span>
+				        <a href="#" class="btn btn-primary btn-lg">Purchase</a>
+		            </div>  /.container -->
+		        </section>
+		         -->
+
+
+		        <!-- footer start -->
+				<footer id="contact" class="footer-widget-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-3 col-md-3 col-md-offset-1">
+								<div class="footer-widget footer-logo">
+									<a href="#"><img src="img/footer-logo.png" alt=""></a>
+								</div><!-- /.col-md-6 -->
+							</div><!-- /.col-md-6 -->
+							<div class="col-sm-3 col-md-2 col-lg-2">
+								<div class="footer-widget">
+									<h3>Social</h3>
+									<ul>
+										<li><a href="#">Twitter</a></li>
+										<li><a href="#">Facebook</a></li>
+										<li><a href="#">Dribble</a></li>
+										<li><a href="#">Linkedin</a></li>
+									</ul>
+								</div><!-- /.footer-widget -->
+							</div><!-- /.col-md-2 -->
+							<div class="col-sm-3 col-md-3">
+								<div class="footer-widget">
+									<h3>Location</h3>
+									<address>
+									  50 Louis St. NW, Ste. 520<br>
+									  Grand Rapids, MI 49503<br>
+									  <!-- Google Map Modal Trigger -->
+									  <a class="modal-map" data-toggle="modal" data-target="#cssMapModal" href="#">View on Google Maps</a>
+									</address>
+
+
+									<!-- Modal -->
+									<div class="modal fade" id="cssMapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-lg">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									        <h4 class="modal-title" id="myModalLabel">Our Location</h4>
+									      </div>
+									      <div class="modal-body">
+
+										    <div id="googleMap"></div>
+										    
+									      </div>
+									    </div><!-- /.modal-content -->
+									  </div><!-- /.modal-dialog -->
+									</div><!-- End Modal -->
+
+								</div><!-- /.footer-widget -->
+							</div><!-- /.col-md-2 -->
+							<div class="col-sm-3 col-md-3">
+								<div class="footer-widget">
+									<h3>Get in Touch</h3>
+									<a href="#">987456321</a>
+									<a href="mailto:#">info@versatileincubation.com</a>
+									<a class="feedback-modal" data-toggle="modal" data-target="#feedModal" href="#">Send us your feedback</a>
+
+									<!-- Modal -->
+									<div class="modal fade" id="feedModal" tabindex="-1" role="dialog" aria-labelledby="feedModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-lg">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									        <h4 class="modal-title" id="feedModalLabel">Send us your feedback</h4>
+									      </div>
+									      <div class="modal-body">
+											<form id="contactForm" action="sendemail.php" method="POST">
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group">
+														    <label for="name">Name</label>
+														    <input id="name" name="name" type="text" class="form-control"  required="" placeholder="Name">
+														</div>
+													</div>
+													<div class="col-md-6">
+													  <div class="form-group">
+													    <label for="email">Email address</label>
+													    <input id="email" name="email" type="email" class="form-control" required="" placeholder="Email">
+													  </div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-6">
+													  <div class="form-group">
+													    <label for="phone">Phone</label>
+													    <input id="phone" name="phone" type="text" class="form-control" placeholder="Phone">
+													  </div>
+													</div>
+													<div class="col-md-6">
+													  <div class="form-group">
+													    <label for="subject">Subject</label>
+													    <input id="subject" name="subject" type="text" class="form-control" required="" placeholder="Subject">
+													  </div>
+													</div>
+												</div>
+
+												<div class="form-group text-area">
+													<label for="message">Message</label>
+													<textarea id="message" name="message" class="form-control" rows="6" required="" placeholder="Message"></textarea>
+												</div>
+
+												<button type="submit" class="btn btn-primary">Send Message</button>
+											</form>
+									      </div>
+									    </div>
+									  </div>
+									</div>
+								</div><!-- /.footer-widget -->
+							</div><!-- /.col-md-2 -->
+						</div><!-- /.row -->
+
+						<div class="row">
+							<div class="col-xs-12 text-center">
+								<div class="copyright">
+									<p>&copy; 2017 Versatile Incubation.  Design by : <a href="#" title="#">Versatile Incubation</a></p>
+								</div>
+							</div>
+						</div>
+
+					</div><!-- /.container -->
+				</footer>
+				<!-- footer end -->
+        </div> <!-- .st-content-inner -->
+    </div> <!-- .st-content -->
+    </div> <!-- .st-pusher -->
+
+
+    	<!-- OFFCANVAS MENU -->
+    	<div class="offcanvas-menu offcanvas-effect visible-xs">
+	        <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">&times;</button>
+	        <h3>Sidebar Menu</h3>
+	        <ul class="list-unstyled">
+	            
+	            <li><a class="offcanvas-link" href="#services">Login/Signup</a></li>
+	            
+	        </ul>
+      	</div><!-- .offcanvas-menu -->
+	</div><!-- /st-container -->
+
+
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">
+				<div class="status-mes"></div>
+			</div>
 		</div>
-	</div>
-	
-	
-  
-</div>
-<div class="section" id="section5">
-<div class="intro">
-		<img src="img/springer.png" style="max-height:200px; margin-bottom:0px; margin-top:-200px">
-	<h1 style="color:#000">I have <span
- class="txt-rotate"
- style="color:#fff"
- data-period="2000"
- data-rotate='[ "done research on ", "proposed an algorithm on ", "improved a", "designed for"]'></span> parallel systems</h1><br>
-<p style="font-size:2em; color:#000"><b>eMDPM:</b>Efficient Multi Dimensional Pattern Matching <br><br>Accepted in <b> 2nd ICSICCS (2018)</b>: International Conference on Smart Innovations in Communication and Computational Sciences
-<br><br>Published in Advances in Intelligent Systems and Computing, <b> Springer Book series </b>ISSN: 2194-5357
-
-</p>
-<br><br>
-<a  href="http://develup.supragyaraj.com/eMDPM" ><span style="font-size:2em; color:#000; border: 1px solid #000; padding:10px">TriFlash </span></a>
-</div>
-</div>
 
 
-
-
-
-
-
-
-
-
-
-<div class="section" id="section9">
-<div class="intro">
-		<img src="img/email.png" style="max-height:300px; margin-bottom:-60px; margin-top:-200px; padding-left: 300px;">
-	<h1 style="color:#000">Would you like to  <span
- class="txt-rotate"
- style="color:#fff"
- data-period="2000"
- data-rotate='[ "know me better ", "connect with me ", "ring me sometime "]'></span> ?</h1><br>
-<p style="font-size:2em;color:#000;">You can find me on atleast one of the following places<br>
-</p>
-<br><br><br>
-<span style="font-size:2em; color:#000;padding:10px">supragyaraj@gmail.com</span>
-<span style="font-size:2em; color:#000;padding:10px">mails@supragyaraj.com</span>
-<span style="font-size:2em; color:#000;padding:10px">+91 97907 22967</span>
-</div>
-</div>
-
-</div>
-
-
-</body>
+	    <!-- jQuery -->
+	    <script src="js/jquery.js"></script>
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="js/bootstrap.min.js"></script>
+	    <!-- wow.min.js -->
+	    <script src="js/wow.min.js"></script>
+	    <!-- smoothscroll -->
+	    <script src="js/smoothscroll.js"></script>
+	    <!-- twitterFetcher_min -->
+	    <script src="js/twitterFetcher_min.js"></script>
+	    <!-- owl.carousel -->
+	    <script src="js/owl.carousel.min.js"></script>
+		<!-- Offcanvas Menu -->
+		<script src="js/hippo-offcanvas.js"></script>
+		<!-- inview -->
+		<script src="js/jquery.inview.min.js"></script>
+		<!-- stellar -->
+		<script src="js/jquery.stellar.js"></script>
+		<!-- countTo -->
+		<script src="js/jquery.countTo.js"></script>
+	    <!-- Scrolling Nav JavaScript -->
+	    <script src="js/jquery.easing.min.js"></script>
+		<!-- flickerPhoto -->
+		<script src="js/flickerPhoto.min.js"></script>
+		<!-- Shuffle.min js -->
+		<script src="js/jquery.shuffle.min.js"></script>
+	    <!-- GOGLE MAP -->
+	    <script src="https://maps.googleapis.com/maps/api/js"></script>
+	    <!-- Custom Script -->
+	    <script src="js/scripts.js"></script>
+	</body>
 </html>
