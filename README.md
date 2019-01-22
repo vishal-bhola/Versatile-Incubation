@@ -6,7 +6,7 @@ Versatile Incubation is an online platform where Innovators can apply for fundin
 
 * HTML
 * JavaScript
-* Cascading Style Sheets
+* Cascading Style Sheets (CSS)
 * jquery
 * Bootstrap
 * Google APIs
@@ -14,7 +14,7 @@ Versatile Incubation is an online platform where Innovators can apply for fundin
 
 ## Usage
 
-Just Open index.html and see the MAGIC!
+Just Open index.html and see the MAGIC! on your screen
 ( INTERNET CONNECTION IS NECESSARY )
 
 ## Credits
