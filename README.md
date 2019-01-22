@@ -28,4 +28,6 @@ Just Open index.html and see the MAGIC!
 * codeshare.io (Backend DB)
 * uiCookies.com (UI/UX Experience)
 
-## DISCLAIMER: Code used is licensed Under GNU_v3.Hence,used in development of site.
+## DISCLAIMER: 
+
+Code used is licensed Under GNU_v3.Hence,used in development of site.
